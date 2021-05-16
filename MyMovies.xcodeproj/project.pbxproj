@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		42C736D7265155E300FCFAA2 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C736D6265155E300FCFAA2 /* Movie.swift */; };
+		42C736D8265157D200FCFAA2 /* details.json in Resources */ = {isa = PBXBuildFile; fileRef = 5100B1C9264BC98D00DEAB08 /* details.json */; };
+		42C736D9265157D200FCFAA2 /* results.json in Resources */ = {isa = PBXBuildFile; fileRef = 5100B1C5264BC98D00DEAB08 /* results.json */; };
+		42C736DA265157D200FCFAA2 /* credits.json in Resources */ = {isa = PBXBuildFile; fileRef = 5100B1C7264BC98D00DEAB08 /* credits.json */; };
+		42C736DB265157D200FCFAA2 /* genres.json in Resources */ = {isa = PBXBuildFile; fileRef = 5100B1C8264BC98D00DEAB08 /* genres.json */; };
+		42C736DD26515A0100FCFAA2 /* MovieRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C736DC26515A0100FCFAA2 /* MovieRow.swift */; };
 		5100B1B4264BC88E00DEAB08 /* MyMoviesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5100B1B3264BC88E00DEAB08 /* MyMoviesApp.swift */; };
 		5100B1B6264BC88E00DEAB08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5100B1B5264BC88E00DEAB08 /* ContentView.swift */; };
 		5100B1B8264BC88F00DEAB08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5100B1B7264BC88F00DEAB08 /* Assets.xcassets */; };
@@ -18,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		42C736D6265155E300FCFAA2 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		42C736DC26515A0100FCFAA2 /* MovieRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRow.swift; sourceTree = "<group>"; };
 		5100B1B0264BC88E00DEAB08 /* MyMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5100B1B3264BC88E00DEAB08 /* MyMoviesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMoviesApp.swift; sourceTree = "<group>"; };
 		5100B1B5264BC88E00DEAB08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +70,7 @@
 			children = (
 				5100B1B3264BC88E00DEAB08 /* MyMoviesApp.swift */,
 				5100B1B5264BC88E00DEAB08 /* ContentView.swift */,
+				42C736DC26515A0100FCFAA2 /* MovieRow.swift */,
 				5100B1C6264BC98D00DEAB08 /* Bundle-Decodable.swift */,
 				5100B1C7264BC98D00DEAB08 /* credits.json */,
 				5100B1C9264BC98D00DEAB08 /* details.json */,
@@ -149,6 +156,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5100B1BB264BC88F00DEAB08 /* Preview Assets.xcassets in Resources */,
+				42C736DB265157D200FCFAA2 /* genres.json in Resources */,
+				42C736DA265157D200FCFAA2 /* credits.json in Resources */,
+				42C736D8265157D200FCFAA2 /* details.json in Resources */,
+				42C736D9265157D200FCFAA2 /* results.json in Resources */,
 				5100B1B8264BC88F00DEAB08 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5100B1B6264BC88E00DEAB08 /* ContentView.swift in Sources */,
+				42C736DD26515A0100FCFAA2 /* MovieRow.swift in Sources */,
 				5100B1B4264BC88E00DEAB08 /* MyMoviesApp.swift in Sources */,
 				42C736D7265155E300FCFAA2 /* Movie.swift in Sources */,
 				5100B1CA264BC98D00DEAB08 /* Bundle-Decodable.swift in Sources */,
@@ -293,7 +305,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MyMovies/Preview Content\"";
-				DEVELOPMENT_TEAM = B5C26XE59E;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MyMovies/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -315,7 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"MyMovies/Preview Content\"";
-				DEVELOPMENT_TEAM = B5C26XE59E;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = MyMovies/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

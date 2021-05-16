@@ -21,16 +21,20 @@ import SwiftUI
 // because it might go away at any point in the future. It's
 // just for testing here.
 //
-// Separately, here's an example value I don't really want you to
-// type live on the stream, so it's here for safe keeping:
-//
-// static let example = Movie(id: 0, title: "Batman", overview: "Rich man beats up poor street criminals.", releaseDate: "1989-01-01", voteAverage: 10, posterPath: "/tDexQyu6FWltcd0VhEDK7uib42f.jpg", backdropPath: "/2va32apQP97gvUxaMnL5wYt4CRB.jpg", genreIds: [12, 14, 16, 18, 27, 28])
-//
 
 struct ContentView: View {
+    @State private var searchResults = Bundle.main.decode(SearchResults.self, from: "results.json", keyDecodingStrategy: .convertFromSnakeCase)
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List {
+                Section {
+                    ForEach(searchResults.results, content: MovieRow.init)
+                }
+            }
+            .listStyle(InsetGroupedListStyle())
+            .navigationTitle("MyMovies")
+        }
     }
 }
 
