@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42C736D7265155E300FCFAA2 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C736D6265155E300FCFAA2 /* Movie.swift */; };
 		5100B1B4264BC88E00DEAB08 /* MyMoviesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5100B1B3264BC88E00DEAB08 /* MyMoviesApp.swift */; };
 		5100B1B6264BC88E00DEAB08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5100B1B5264BC88E00DEAB08 /* ContentView.swift */; };
 		5100B1B8264BC88F00DEAB08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5100B1B7264BC88F00DEAB08 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42C736D6265155E300FCFAA2 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		5100B1B0264BC88E00DEAB08 /* MyMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5100B1B3264BC88E00DEAB08 /* MyMoviesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMoviesApp.swift; sourceTree = "<group>"; };
 		5100B1B5264BC88E00DEAB08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				5100B1C9264BC98D00DEAB08 /* details.json */,
 				5100B1C8264BC98D00DEAB08 /* genres.json */,
 				5100B1C5264BC98D00DEAB08 /* results.json */,
+				42C736D6265155E300FCFAA2 /* Movie.swift */,
 				5100B1B7264BC88F00DEAB08 /* Assets.xcassets */,
 				5100B1BC264BC88F00DEAB08 /* Info.plist */,
 				5100B1B9264BC88F00DEAB08 /* Preview Content */,
@@ -159,6 +162,7 @@
 			files = (
 				5100B1B6264BC88E00DEAB08 /* ContentView.swift in Sources */,
 				5100B1B4264BC88E00DEAB08 /* MyMoviesApp.swift in Sources */,
+				42C736D7265155E300FCFAA2 /* Movie.swift in Sources */,
 				5100B1CA264BC98D00DEAB08 /* Bundle-Decodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
