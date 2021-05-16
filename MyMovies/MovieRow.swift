@@ -5,15 +5,34 @@
 //  Created by Marlo Wendell on 5/16/21.
 //
 
+import SDWebImageSwiftUI
 import SwiftUI
 
 struct MovieRow: View {
     let movie: Movie
     
+    var posterImage: some View {
+        Group {
+            if let path = movie.posterPath {
+                WebImage(url: URL(string: "https://image.tmdb.org/t/p/w342\(path)"))
+                    .placeholder(Image("Loading").resizable())
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 60, height: 90)
+                
+            } else {
+                Image("NoPoster")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 60, height: 90)
+            }
+        }
+    }
+    
     var body: some View {
-        NavigationLink(destination: Color.red) {
+        NavigationLink(destination: MovieDetailsView(movie: movie)) {
             HStack {
-                Image(systemName: "video")
+                posterImage
                 
                 VStack(alignment: .leading) {
                     Text(movie.title)
@@ -21,7 +40,7 @@ struct MovieRow: View {
                     
                     HStack {
                         Text("Rating: \(movie.voteAverage, specifier: "%g")/10")
-                        Text(movie.releaseDate)
+                        Text(movie.formattedReleaseDate)
                     }
                     .font(.subheadline)
                     
